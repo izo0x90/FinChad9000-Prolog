@@ -20,11 +20,20 @@ asset(
      purchase_price(5),
      units(200)
      ).
+     
+asset(
+     name('Enron'),
+     ticker('ENE'),
+     purchase_price(1000000),
+     units(200)
+     ).
+     
 %CURRENT PRICE DATA
  
 current_price_data([asset(ticker('DB'),  price(10)),
                     asset(ticker('LEH'), price(1)),
-                    asset(ticker('BTC'), price(10))]).
+                    asset(ticker('BTC'), price(10)),
+		    asset(ticker('ENE'), price(0.000001))]).
  
 %RISK TOLERANCE PROFILES DATA
  
